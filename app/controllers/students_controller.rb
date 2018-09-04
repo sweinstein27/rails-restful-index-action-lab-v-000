@@ -4,6 +4,6 @@ class StudentsController < ApplicationController
   protect_from_forgery with: :exception
 
   def index
-    @posts = Post.all
+    @students = Student.all
   end
 end
