@@ -734,3 +734,13 @@ Started GET "/students" for 173.52.113.65 at 2018-09-04 15:55:35 +0000
 Processing by StudentsController#index as HTML
   Rendered students/index.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 173.52.113.65 at 2018-09-04 16:21:52 +0000
+Processing by StudentsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant StudentsController::Post):
+  app/controllers/students_controller.rb:7:in `index'
+
+
