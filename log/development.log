@@ -711,3 +711,20 @@ Started GET "/students" for 173.52.113.65 at 2018-09-04 15:54:45 +0000
 Processing by StudentsController#index as HTML
   Rendered students/index.html.erb within layouts/application (5.5ms)
 Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 173.52.113.65 at 2018-09-04 15:54:53 +0000
+Processing by StudentsController#index as HTML
+  Rendered students/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Students):
+    1: <h1> Hi </h1>
+    2: <p><%= Students.all%></p>
+  app/views/students/index.html.erb:2:in `_app_views_students_index_html_erb___4478492608430378510_69890225263080'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.1ms)
